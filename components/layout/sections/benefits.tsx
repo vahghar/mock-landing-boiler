@@ -2,32 +2,27 @@ import React from 'react'
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 interface BenefitsProps {
-    icon: string;
     title: string;
     description: string;
 }
 
 const benefitList: BenefitsProps[] = [
     {
-        icon: "Blocks",
         title: "Strengthen Your Brand",
         description:
             "Create a brand that resonates with your audience by fostering credibility and trust.",
     },
     {
-        icon: "LineChart",
         title: "Generate Quality Leads",
         description:
             "Attract the right audience to your business with strategies tailored for growth.",
     },
     {
-        icon: "Wallet",
         title: "Maximize Revenue",
         description:
             "Increase your profit margins by turning potential customers into repeat buyers.",
     },
     {
-        icon: "Sparkle",
         title: "Innovate with Confidence",
         description:
             "Test new ideas and gain insights to evolve your business and stay ahead of the competition.",
@@ -50,19 +45,13 @@ export const BenefitsSection = () => {
                 </div>
 
                 <div className="grid lg:grid-cols-2 gap-4 w-full">
-                    {benefitList.map(({ icon, title, description }, index) => (
+                    {benefitList.map(({title, description }, index) => (
                         <Card
                             key={title}
                             className="bg-muted/50 dark:bg-card hover:bg-background transition-all delay-75 group/number"
                         >
                             <CardHeader>
                                 <div className="flex justify-between">
-                                    {/*<Icon
-                                        name={icon as keyof typeof icons}
-                                        size={32}
-                                        color="hsl(var(--primary))"
-                                        className="mb-6 text-primary"
-                                    />*/}
                                     <span className="text-5xl text-muted-foreground/15 font-medium transition-all delay-75 group-hover/number:text-muted-foreground/30">
                                         0{index + 1}
                                     </span>

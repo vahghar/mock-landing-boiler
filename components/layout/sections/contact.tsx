@@ -25,7 +25,7 @@ export const ContactSection = () => {
   return (
     <section id="contact" className="container py-24 sm:py-32 text-center">
       <h2 className="text-lg text-primary mb-2 tracking-wider">Contact Us</h2>
-      <h1 className="text-3xl md:text-4xl font-bold mb-4">Let's Get in Touch</h1>
+      <h1 className="text-3xl md:text-4xl font-bold mb-4">Let&apos;s Get in Touch</h1>
       <div className="relative">
         {isExploding && (
           <ConfettiExplosion
